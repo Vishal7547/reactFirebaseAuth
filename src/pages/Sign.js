@@ -34,7 +34,7 @@ const Sign = () => {
       });
   };
   return (
-    <>
+    <div className="main">
       <div className="login">
         <div className="title">
           <h1>Sign Up</h1>
@@ -75,7 +75,7 @@ const Sign = () => {
           ) : (
             <button onClick={handleSubmit}>Signing In</button>
           )}
-          <span>{error}</span>
+          <span className="error">{error}</span>
           <br />
           <span>
             if already have account?
@@ -85,7 +85,7 @@ const Sign = () => {
           </span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
